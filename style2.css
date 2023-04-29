@@ -46,4 +46,23 @@ body {
   li {
     margin-bottom: 10px;
   }
-  
+  #acao a {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+  }
+  #romance a {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+  }
+#yaoi a{
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+#yuri a {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
