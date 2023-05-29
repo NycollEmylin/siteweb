@@ -22,26 +22,35 @@
               </ul>
             </nav>
       </header>
-      <p class="entrada">Veja qual anime/mangá é melhor para você.</p>
-      <section>
-      <form>
-        <label for="nome" class="lab">Qual seu nome?</label><br>
-        <input type="text" name="nome" id="nome" value="Nome:"><br>
-        <label for="idade">Qual a sua idade?</label><br>
-        <input type="number" name="idade" id="idade"><br>
-        <label for="generos">Quais desses generos você prefere?</label><br>
-        <input type="checkbox" name="op1" id="op1">
-          <label for="op1">Ação</label><br>
-        <input type="checkbox" name="op2" id="op2">
-          <label for="op2">Romance</label><br>
-        <input type="checkbox" name="op3" id="op3">
-          <label for="op3">Yaoi</label><br>
-        <input type="checkbox" name="op4" id="op4">
-           <label for="op4">Yuri</label><br>
-        <label for="preferencia"> Você tem alguma preferencia para genero de anime ou mangá?</label><br>
-        <input type="text" name="pref" id="pref"><br><br>
-        <input type="button" value="Botão" id="botao">
+        <div class="box">
+      <form action="">
+        <fieldset>
+            <legend><b> Veja qual anime/mangá é melhor para você.</b></legend>
+          <br>
+        <div class="inputbox">
+            <input type="Nome" name="Nome" id="nome"  class="InputUser" required>
+            <label for="nome" class="labelInput">Nome Completo</label>
+        </div><br><br>
+        <div class="inputbox">
+            <input type="text" name="Email" id="email" class="InputUser" required>
+            <label for="nome" class="labelInput">Email</label>
+        </div><br>
+        <p id="fonte">Generos:</p>
+            <input type="radio" name="genero" id="Ação" valor="Ação" required>
+            <label for="Ação" id="Ação">Ação</label><br>
+            <input type="radio" name="genero" id="Romance" valor="Romance" required>
+            <label for="Romance" id="Romance">Romance</label><br>
+            <input type="radio" name="genero" id="Yaoi" valor="Yaoi" required>
+            <label for="Yaoi" id="Yaoi">Yaoi</label><br>
+            <input type="radio" name="genero" id="Yuri" valor="Yuri" required>
+            <label for="Yuri" id="Yuri">Yuri</label><br>
+        <br>
+            <label for="nome" id="fonte"><b>Data de Nascimento:</b></label>
+            <input type="date" name="data_nascimento" id="data_nascimento" required>
+        <br><br> 
+        <input type="submit" name="submit" id="submit">
+        </fieldset>
       </form>
-    </section>
+    </div>
 </body>
 </html>
