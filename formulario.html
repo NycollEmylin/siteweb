@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pag.html">
+    <script src="sitescript.js" defer></script>
     <title>Formulario</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
             </nav>
       </header>
         <div class="box">
-      <form action="">
+      <form action="post" id="form1">
         <fieldset>
             <legend><b> Veja qual anime/mangá é melhor para você.</b></legend>
           <br>
@@ -36,19 +37,19 @@
             <label for="nome" class="labelInput">Email</label>
         </div><br>
         <p id="fonte">Generos:</p>
-            <input type="radio" name="genero" id="Ação" valor="Ação" required>
+            <input type="checkbox" name="genero" id="Ação" valor="Ação" required>
             <label for="Ação" id="Ação">Ação</label><br>
-            <input type="radio" name="genero" id="Romance" valor="Romance" required>
+            <input type="checkbox" name="genero" id="Romance" valor="Romance" required>
             <label for="Romance" id="Romance">Romance</label><br>
-            <input type="radio" name="genero" id="Yaoi" valor="Yaoi" required>
+            <input type="checkbox" name="genero" id="Yaoi" valor="Yaoi" required>
             <label for="Yaoi" id="Yaoi">Yaoi</label><br>
-            <input type="radio" name="genero" id="Yuri" valor="Yuri" required>
+            <input type="checkbox" name="genero" id="Yuri" valor="Yuri" required>
             <label for="Yuri" id="Yuri">Yuri</label><br>
         <br>
             <label for="nome" id="fonte"><b>Data de Nascimento:</b></label>
             <input type="date" name="data_nascimento" id="data_nascimento" required>
         <br><br> 
-        <input type="submit" name="submit" id="submit">
+        <input type="submit" name="submit" id="submit" onclick="check()">
         </fieldset>
       </form>
     </div>
