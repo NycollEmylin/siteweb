@@ -206,7 +206,7 @@ function check(){
         div4.appendChild(titulo4);
          //Bloom Into You
          let linkbloom=document.createElement('a');
-         linkbloom.setAttribute("href", "");
+         linkbloom.setAttribute("href", "bloomintoyou.html");
          let textobloom= document.createTextNode("Bloom Into You");
          linkbloom.appendChild(textobloom);
          let imgbloom=document.createElement('img');
@@ -218,7 +218,7 @@ function check(){
          div4.appendChild(imgbloom);
          //Citrus
          let linkcitrus=document.createElement('a');
-         linkcitrus.setAttribute("href", "");
+         linkcitrus.setAttribute("href", "citrus.html");
          let textocitrus= document.createTextNode("Citrus");
          linkcitrus.appendChild(textocitrus);
          let imgcitrus=document.createElement('img');
@@ -230,7 +230,7 @@ function check(){
          div4.appendChild(imgcitrus);
          //Asagao to Kase-san
          let linkasagao=document.createElement('a');
-         linkasagao.setAttribute("href","");
+         linkasagao.setAttribute("href","AsagaotoKase-san.html");
          let textoasagao=document.createTextNode("Asagao to Kase-san");
          linkasagao.appendChild(textoasagao);
          let imgasagao=document.createElement('img');
