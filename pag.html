@@ -22,7 +22,30 @@
       </nav>
     </header> 
     <main>
-     <a href="formulario.html"><p>Venha ver qual seu tipo ideal de anime/mangá.</p></a> 
+      <div class="carousel-container">
+        <div class="carousel">
+          <a href="formulario.html">
+          <img src="./Nova pasta/clover.jpg" alt="Imagem 1">
+          <img src="./Nova pasta/bleach2.jpg" alt="Imagem 2">
+          <img src="./Nova pasta/fruits.jpg" alt="Imagem 3">
+          <img src="./Nova pasta/naruto.jpg" alt="Imagem 4">
+          <img src="./Nova pasta/love.jpg" alt="Imagem 5">
+          </a>
+        </div>
+      </div>
+      <script>
+        const carousel = document.querySelector('.carousel');
+        
+        setInterval(() => {
+          carousel.style.animation = 'carousel-animation 0.8s ease-in-out';
+          
+          setTimeout(() => {
+            carousel.style.animation = '';
+            carousel.appendChild(carousel.firstElementChild);
+          }, 500);
+        }, 2000);
+      </script>
+     <a href="formulario.html"><p>Venha ver qual seu tipo ideal de anime/mangá.</p></a>
       <section id="acao">
         <h1>Ação</h1>
         <ul>
@@ -68,7 +91,7 @@
             <img src="./imagens/Sekaiichi Hatsukoi.jpg" class="capas" alt="capa08" width="200" height="250">
           <li>Sekaiichi Hatsukoi</li>
           </a>
-          <a href="">
+          <a href="Love Stage.html">
             <img src="./imagens/Love Stage!!.jpg" class="capas" alt="capa09" width="200" height="250">
           <li>Love Stage!!</li>
           </a>
@@ -78,15 +101,15 @@
       <section id="yuri" class="nomes">
         <h1>Yuri</h1>
         <ul>
-          <a href="" class="nomes">
+          <a href="bloomintoyou.html" class="nomes">
             <img src="./imagens/Bloom Into You.jpg" class="capas" alt="capa10" width="200" height="250">
           <li>Bloom Into You</li>
           </a>
-          <a href="" class="nomes">
+          <a href="citrus.html" class="nomes">
             <img src="./imagens/Citrus.jpe" class="capas" alt="capa11" width="200" height="250">
           <li>Citrus</li>
           </a>
-          <a href="" class="nomes">
+          <a href="AsagaotoKase-san.html" class="nomes">
             <img src="./imagens/Asagao to Kase-san.jpg" class="capas" alt="capa12" width="200" height="250">
           <li>Asagao to Kase-san</li>
           </a>

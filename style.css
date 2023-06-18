@@ -194,7 +194,7 @@ header{
       column-count: 2;
     }
     nav li {
-      font-size: 14px;
+      font-size: 12px;
     }
     nav li {
       display: block;
@@ -221,5 +221,10 @@ header{
   nav li {
     font-size: 12px;
   }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
-}
+  }
+  }
