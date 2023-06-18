@@ -2,6 +2,11 @@ var fm=document.forms.form1;
 var el=fm.elements
 
 function check(){
+    //Nova Pagina
+    //var opened = window.open("");
+    /*.appendChild(div1);
+    opened.document.write("<html><head><title>teste</title></head><body></body></html>");*/
+    //CSS
     let css=document.createElement('link');
     css.rel='stylesheet';
     css.type='text/css';
@@ -10,18 +15,52 @@ function check(){
     css2.rel='stylesheet';
     css2.type='text/css';
     css2.href='style2.css';
+    //head
+    /*let head=document.createElement('head');
+    let title=document.createElement('title');
+    let textotitle=document.createTextNode("Nova Pagina");
+    head.appendChild(title);
+
+    let body = createElement('body');*/
+
+    //header
+    let linkpag=document.createElement('a');
+    linkpag.setAttribute("href", "pag.html");
+    let textopag= document.createTextNode("Página inicial");
+    linkpag.appendChild(textopag);
+    let header=document.createElement('header');
+    header.setAttribute("background-color","#333");
+    header.setAttribute("display","inline");
+    header.setAttribute("color","white");
+    header.appendChild(linkpag);
+    let br1=document.createElement('br');
+    header.appendChild(br1);
+    let linkform=document.createElement('a');
+    linkform.setAttribute("href", "formulario.html");
+    let textoform= document.createTextNode("Refazer Formulário");
+    linkform.appendChild(textoform);
+    header.appendChild(linkform);
+    let br2=document.createElement('br');
+    header.appendChild(br2);
+    header.appendChild(css2);
+    //header.style.backgroundColor="black"
+    //document.write(header.innerHTML);
+    //novaPagina.appendChild(header);
 
     if(el[3].checked === true){
         let div1=document.createElement('div');
         let titulo2=document.createElement('h1');
+        div1.appendChild(titulo2);
         let textotitulo2=document.createTextNode('Ação');
         titulo2.appendChild(textotitulo2);
         //Naruto
+        let p =document.createElement('p');
         let linknaruto=document.createElement('a');
         linknaruto.setAttribute("class","nomes");
         linknaruto.setAttribute("href", "naruto.html");
         let textonaruto= document.createTextNode("Naruto");
         linknaruto.appendChild(textonaruto);
+        //p.appendChild(linknaruto);
         let imgnaruto=document.createElement('img');
         imgnaruto.setAttribute("class","capas");
         imgnaruto.setAttribute("src","./imagens/naruto.jpg");
@@ -29,6 +68,7 @@ function check(){
         imgnaruto.setAttribute("heigth","250");
         div1.appendChild(linknaruto);
         div1.appendChild(imgnaruto);
+        //div1.appendChild(p);
         //Black Clover
         let linkcover=document.createElement('a');
         linkcover.setAttribute("class","nomes");
@@ -55,16 +95,19 @@ function check(){
         div1.appendChild(linkbleach);
         div1.appendChild(imgbleach);
         //////////
-        div1.appendChild(titulo2);
         div1.appendChild(css);
         div1.appendChild(css2);
+        //opened.appendChild(div1);
+        //opened.document.write(div1.innerHTM);
         document.write(div1.innerHTML);
-    } 
+
+    }
     if(el[4].checked === true){
         let div2=document.createElement('div');
         let titulo1=document.createElement('h1');
         let textotitulo1=document.createTextNode('Romance');
         titulo1.appendChild(textotitulo1);
+        div2.appendChild(titulo1);
         //Fruits Basket
         let linkfruits=document.createElement('a');
         linkfruits.setAttribute("href", "fruits.html");
@@ -102,7 +145,6 @@ function check(){
         div2.appendChild(linkwotaku);
         div2.appendChild(imgwotaku);
         //////////
-        div2.appendChild(titulo1);
         div2.appendChild(css);
         div2.appendChild(css2);
         document.write(div2.innerHTML)
@@ -113,6 +155,7 @@ function check(){
         let titulo3=document.createElement('h1');
         let textotitulo3=document.createTextNode('Yaoi');
         titulo3.appendChild(textotitulo3);
+        div3.appendChild(titulo3);
         //Junjou Romantica
         let linkjunjou=document.createElement('a');
         linkjunjou.setAttribute("href", "junjou.html");
@@ -150,7 +193,6 @@ function check(){
         div3.appendChild(linksekaiichi);
         div3.appendChild(imgsekaiichi);
         //////////
-        div3.appendChild(titulo3);
         div3.appendChild(css);
         div3.appendChild(css2);
         document.write(div3.innerHTML)
@@ -161,6 +203,7 @@ function check(){
         let titulo4=document.createElement('h1');
         let textotitulo4=document.createTextNode('Yuri');
         titulo4.appendChild(textotitulo4);
+        div4.appendChild(titulo4);
          //Bloom Into You
          let linkbloom=document.createElement('a');
          linkbloom.setAttribute("href", "");
@@ -198,10 +241,9 @@ function check(){
          div4.appendChild(linkasagao);
          div4.appendChild(imgasagao);
          //////////
-         div4.appendChild(titulo4);
          div4.appendChild(css);
          div4.appendChild(css2);
-         document.write(div4.innerHTML)
+        document.write(div4.innerHTML)
  
     }
 }
