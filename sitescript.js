@@ -32,7 +32,7 @@ yuri.style.display = 'none';
 function check(){
 	if(nome.value == ""){
 		alert('Por favor, preencha o campo nome!');
-	}else if(email.value == ""){
+	}else if(email.value == "" || !isEmailValid(email.value)){
 		alert('Por favor, preencha o campo E-mail!');
 	}else if(data_nascimento.value == ""){
 		alert('Por favor, preencha a Data de Nascimento!');
@@ -101,6 +101,19 @@ function check(){
 				bt_voltar.style.display = 'block';
 			}
 		}
+}
+
+//função para validar e-mail
+function isEmailValid(email){
+
+    //cria regex para validar email
+    const emailRegex = new RegExp(
+        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
+    );
+    if(emailRegex.test(email)){
+        return true
+    }
+    return false
 }
 
 function voltar(){
