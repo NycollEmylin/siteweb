@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="pag.html">
-    <script src="sitescript.js" defer></script>
+	<script type="text/javascript" src="sitescript.js" defer></script>
     <title>Formulario</title>
 </head>
 <body>
@@ -23,35 +24,141 @@
               </ul>
             </nav>
       </header>
-        <div class="box">
-      <form action="post" id="form1">
+	  <div id="formulario">
+      <div class="box">
+      <form id="form1">
         <fieldset>
             <legend><b> Veja qual anime/mangá é melhor para você.</b></legend>
-          <br>
-        <div class="inputbox">
-            <input type="Nome" name="Nome" id="nome"  class="InputUser" required>
-            <label for="nome" class="labelInput">Nome Completo</label>
-        </div><br><br>
-        <div class="inputbox">
-            <input type="text" name="Email" id="email" class="InputUser" required>
-            <label for="nome" class="labelInput">Email</label>
-        </div><br>
-        <p id="fonte">Generos:</p>
-            <input type="checkbox" name="genero" id="Ação" valor="Ação" required>
+			<br>
+			<div class="inputbox">
+				<input type="Nome" name="Nome" id="nome"  class="InputUser" required>
+				<label for="nome" class="labelInput">Nome Completo</label>
+			</div>
+			<br><br>
+			<div class="inputbox">
+				<input type="text" name="Email" id="email" class="InputUser" required>
+				<label for="nome" class="labelInput">Email</label>
+			</div><br>
+			<label for="nome" id="fonte"><b>Data de Nascimento:</b></label>
+				<input type="date" name="data_nascimento" id="data_nascimento" required>
+			<br><br>
+			<label for="nome" id="fonte">Escolha seu(s) gênero(s) preferido(s):</label>
+			<br><br>
+            <input type="checkbox" name="genero" id="Acao" valor="Ação">
             <label for="Ação" id="Ação">Ação</label><br>
-            <input type="checkbox" name="genero" id="Romance" valor="Romance" required>
+            <input type="checkbox" name="genero" id="Romance" valor="Romance">
             <label for="Romance" id="Romance">Romance</label><br>
-            <input type="checkbox" name="genero" id="Yaoi" valor="Yaoi" required>
+            <input type="checkbox" name="genero" id="Yaoi" valor="Yaoi">
             <label for="Yaoi" id="Yaoi">Yaoi</label><br>
-            <input type="checkbox" name="genero" id="Yuri" valor="Yuri" required>
+            <input type="checkbox" name="genero" id="Yuri" valor="Yuri" >
             <label for="Yuri" id="Yuri">Yuri</label><br>
         <br>
-            <label for="nome" id="fonte"><b>Data de Nascimento:</b></label>
-            <input type="date" name="data_nascimento" id="data_nascimento" required>
-        <br><br> 
-        <input type="submit" name="submit" id="submit" onclick="check()">
+        <input type="submit" name="submit" id="submit" onClick="check()">
         </fieldset>
       </form>
     </div>
+	</div>
+	
+	<div id="texto">
+		<br>
+		<h2 id="informacao"> Esses são os resultados </h2>
+	</div>
+	
+	<div id="acao">
+		<br><br>
+		<div class="lado_i">
+			<img src="./imagens/acao.png" width="45px" height="45px">
+		</div>
+		<div class="lado_t">
+			<h1>Ação</h1>
+		</div>
+		<ul>
+			<a href="blackclover.html" class="nomes">
+				<img src="./imagens/black.jpeg" class="capas" alt="capa01" width="200" height="250">
+				<li>Black Clover</li>
+			</a>
+			<a href="naruto.html"class="nomes" >
+				<img src="./imagens/naruto.jpg" class="capas" alt="capa02" width="200" height="250">
+				<li>Naruto</li>
+			</a>
+			<a href="bleach.html" class="nomes">
+				<img src="./imagens/bleach.jpg" class="capas" alt="capa03" width="200" height="250">
+				<li>Bleach</li>
+			</a>
+		</ul>
+	</div>
+	
+	<div id="romance">
+		<div class="lado_i">
+			<img src="./imagens/romance.png" width="45px" height="45px">
+		</div>
+		<div class="lado_t">
+			<h1>Romance</h1>
+		</div>
+		<ul>
+			<a href="fruits.html" class="nomes">
+				<img src="./imagens/Fruits Basket.jpe" class="capas" alt="capa04" width="200" height="250">
+				<li>Fruits Basket</li>
+			</a>
+			<a href="kimi.html"class="nomes">
+			  <img src="./imagens/Kimi ni Todoke.jpg" class="capas" alt="capa05" width="200" height="250">
+			  <li>Kimi ni Todoke</li>
+			</a>
+			<a href="Wotaku.html" class="nomes" >
+			  <img src="./imagens/Wotaku ni Koi wa Muzukashii.jpg" class="capas" alt="capa06" width="200" height="250">
+			  <li>Wotaku ni Koi..</li>
+			</a>
+		</ul>
+	</div>
+	
+	<div id="yaoi">
+		<div class="lado_i">
+			<img src="./imagens/yaoi.png" width="45px" height="45px">
+		</div>
+		<div class="lado_t">
+			<h1>Yaoi</h1>
+		</div>
+        <ul>
+          <a href="Junjou.html" class="nomes">
+            <img src="./imagens/Junjou Romantica.jpg" class="capas" alt="capa7" width="200" height="250">
+          <li>Junjou Romantica</li>
+          </a>
+          <a href="Sekaiichi.html"class="nomes" >
+            <img src="./imagens/Sekaiichi Hatsukoi.jpg" class="capas" alt="capa08" width="200" height="250">
+          <li>Sekaiichi Hatsukoi</li>
+          </a>
+          <a href="Love Stage.html">
+            <img src="./imagens/Love Stage!!.jpg" class="capas" alt="capa09" width="200" height="250">
+          <li>Love Stage!!</li>
+          </a>
+        </ul>
+	</div>
+	
+	<div id="yuri">
+		<div class="lado_i">
+			<img src="./imagens/yuri.png" width="45px" height="45px">
+		</div>
+		<div class="lado_t">
+			<h1>Yuri</h1>
+		</div>
+        <ul>
+          <a href="bloomintoyou.html" class="nomes">
+            <img src="./imagens/Bloom Into You.jpg" class="capas" alt="capa10" width="200" height="250">
+          <li>Bloom Into You</li>
+          </a>
+          <a href="citrus.html" class="nomes">
+            <img src="./imagens/Citrus.jpe" class="capas" alt="capa11" width="200" height="250">
+          <li>Citrus</li>
+          </a>
+          <a href="AsagaotoKase-san.html" class="nomes">
+            <img src="./imagens/Asagao to Kase-san.jpg" class="capas" alt="capa12" width="200" height="250">
+          <li>Asagao to Kase-san</li>
+          </a>
+        </ul>
+	</div>
+		
+	<div id="bt_voltar">
+		<button id="voltar" onClick="voltar()">Voltar</button>
+	</div>
 </body>
 </html>
